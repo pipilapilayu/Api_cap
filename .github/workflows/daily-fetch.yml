@@ -2,8 +2,7 @@ name: Daily Guard List Fetch
 
 on:
   schedule:
-    # 每天UTC时间16点运行（北京时间0点）
-    - cron: '*/5 * * * *'
+   - cron: '*/20 * * * *'  
   workflow_dispatch:  # 允许手动触发
     inputs:
       reason:
