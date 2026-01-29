@@ -54,7 +54,7 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add guard_list.csv
-        git commit -m "🤖 自动更新舰长名单 [$(date +'%Y-%m-%d %H:%M')]"
+        git commit -m "🤖 自动更新舰长名单 [$(TZ=Asia/Shanghai date '+%Y-%m-%d %H:%M')]"
         git push
       env:
         # 使用GitHub Token进行推送
